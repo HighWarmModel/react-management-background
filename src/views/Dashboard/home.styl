@@ -1,0 +1,68 @@
+.home-layout
+  .logo
+    display flex
+    flex-flow row nowrap
+    justify-content center
+    align-items center
+    height 59px
+    b
+      padding-left 14px
+      color #ffffff
+      font-size 16px
+  .ant-layout-sider-collapsed
+    .logo
+      b
+        display none
+  .trigger
+    font-size 18px
+    line-height 64px
+    padding 0 24px
+    cursor pointer
+    transition color 0.3s
+  .home-sider
+    background-color #252a2f
+    .home-menu
+      border none
+      background-color #252a2f
+      &.ant-menu-inline-collapsed
+        .home-menu-title
+          max-width 0
+          display inline-block
+          opacity 0
+      .home-menu-title
+        padding-left 15px
+      .home-menu-item
+        height 46px
+        line-height 46px
+        &.ant-menu-item-selected
+          background-color #192129
+          color #00c1de
+          &::before
+            position absolute
+            top 0
+            left 0
+            content ''
+            width 4px
+            height 100%
+            background-color #00c1de
+      .home-submenu
+        background-color #252a2f
+        .ant-menu-sub
+          &.ant-menu-inline
+            background-color #252a2f
+            box-shadow none
+        .ant-menu-submenu-title
+          height 46px
+          line-height 46px
+        .home-submenu-item
+          &.ant-menu-item-selected
+            background-color #192129
+            color #00c1de
+            &::before
+              position absolute
+              top 0
+              left 0
+              content ''
+              width 4px
+              height 100%
+              background-color #00c1de

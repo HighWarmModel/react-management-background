@@ -1,0 +1,64 @@
+
+.fl
+  float left
+.fr
+  float right
+.clear::after
+  content: ""
+  clear both
+  height 0
+  width 0
+  overflow hidden
+.position
+  position relative
+// 对账管理的财务明细和财务统计
+.financial-details
+  padding 22px 40px
+  background-color #ffffff
+  min-height 336px
+  .title
+    font-size 14px
+    color #252a2f
+    font-weight blod
+  .demand-main
+    display flex
+    flex-flow row wrap
+    justify-content space-between
+    align-items flex-start
+    margin-top 36px
+    .trading-hours
+      display flex
+      flex-flow row wrap
+      align-items center
+      margin-bottom 16px
+      .name
+        font-size 13px
+        color #161616
+  .financial-details-main
+    margin-top 26px
+    .financial-details-container
+      .financial-details-content
+        text-align center
+      td.financial-details-cell
+        & > span.status-circle
+          display: flex
+          flex-flow row nowrap
+          justify-content center
+          align-items center
+          &::before
+            content ""
+            display inline-block
+            width 6px
+            height 6px
+            border-radius 50%
+            margin-right 10px
+          &.fail-circle
+            &::before
+              background-color #f5222d
+          &.success-circle
+            &::before
+              background-color #008eed
+.error-common
+  .antd-pro-exception-actions
+    display none
+

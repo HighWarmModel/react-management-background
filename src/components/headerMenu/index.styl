@@ -1,0 +1,76 @@
+.header-menu
+  .header-menu-main
+    .header-menu-container
+      position relative
+      background-color #ffffff
+      padding 0
+      box-shadow: 0 2px 6px 0 rgba(184, 184, 184, 0.2)
+      .header-menu-top
+        padding 0 43px
+        height 100%
+        display flex
+        flex-flow row nowrap
+        justify-content space-between
+        align-items center
+        .left-trigger
+          font-size 24px
+          color #3a3f43
+        .right-container
+          display flex
+          justify-content flex-start
+          align-items center
+          height 100%
+          .notice-icon
+            display flex
+            justify-content center
+            align-items center
+            width 70px
+            height 100%
+            cursor pointer
+            &:hover
+              background-color #edf3f6
+          .head-img
+            display flex
+            justify-content center
+            align-items center
+            width 70px
+            height 100%
+            cursor pointer
+            &:hover
+              background-color #edf3f6
+  .header-menu-bottom
+    display: flex
+    align-items center
+    height 48px
+    width 100%
+    padding 0 43px 0 38px
+    box-sizing: border-box
+    background-color #ffffff
+    box-shadow: 0 2px 6px 0 rgba(184, 184, 184, 0.2)
+    .ant-breadcrumb
+      display: flex
+      align-items center
+      height 100%
+      & > span
+        position relative
+        display: flex
+        align-items: center
+        height 100%
+        .header-menu-bottom-item
+          display: flex
+          align-items: center
+          padding 0 5px
+        &:last-child
+          color #00c1de
+          &::after
+            position: absolute
+            bottom 0
+            left: 0
+            height 2px
+            content: ""
+            width: 100%
+            display: block
+            background-color #00c1de
+
+.antd-pro-notice-icon-popover
+  width 345px
